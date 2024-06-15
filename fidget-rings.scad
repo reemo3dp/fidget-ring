@@ -10,7 +10,7 @@ module ring(height, radius, wallThickness) {
 
 
 module fidget_rings(height, max_radius, wall_thickness, distance) {
-    min_radius = height/1.5;
+    min_radius = height/1.8;
     num_rings = floor((max_radius-min_radius)/(wall_thickness+distance));
     
     center_radius = max_radius-(num_rings)*(wall_thickness+distance);
@@ -24,4 +24,7 @@ module fidget_rings(height, max_radius, wall_thickness, distance) {
     }
 };
 
-fidget_rings(13, 30, 1.2, 0.5);
+
+
+fidget_rings(15, 30, 2.4, 0.4);
+
